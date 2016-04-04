@@ -31,6 +31,7 @@ public class HomeController {
 		return new ModelAndView("ui/index.html");
 	}
 	
+	//FIXME teste de chamada Rest.
 	@RequestMapping("/activityList")
 	public List<Activity> activityList () {
 		return  this.activityRepository.findAll();
